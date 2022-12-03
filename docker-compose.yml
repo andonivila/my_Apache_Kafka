@@ -26,8 +26,17 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
 
-
+#Ejecutar docker:
 # docker exec -it kafka-broker-1 bash
+
+#Crear topic
 # kafka-topics --bootstrap-server kafka-broker-1:9092 --create --topic ejemplo1
+
+#Listar topic
+#kafka-topics --list --bootstrap-server kafka-broker-1:9092
+
+#Crear Producer
 # kafka-console-producer --bootstrap-server kafka-broker-1:9092 --topic ejemplo1
+
+#Crear Consumer
 # kafka-console-consumer --bootstrap-server broker-1:9092 --topic ejemplo1  --from-beginning
